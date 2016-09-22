@@ -3,21 +3,20 @@
 *A single page application using angularjs* 
 
 ### Install
-
 1. Clone the repo
  
- ```bash
- git clone https://github.com/karthicksmart/angular-quiz
- ```
-1. cd into the project
-
 ```bash
- cd angular-quiz
+git clone https://github.com/karthicksmart/angular-quiz
 ```
-1. Installation
+2. cd into the project
 
 ```bash
-  npm install
+cd angular-quiz
+```
+3. Installation
+
+```bash
+npm install
 ```
 
 #### Run
