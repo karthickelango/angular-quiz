@@ -2,7 +2,7 @@
 
 *A single page application using angularjs* 
 
-### (Demo)[https://karthickelango.github.io/angular-quiz]
+### [Demo](https://karthickelango.github.io/angular-quiz)
 
 ### Install
 
