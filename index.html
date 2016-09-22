@@ -10,10 +10,20 @@
 </head>
 <body ng-app="myApp">
   <div ng-controller="appCtrl">
-    <p ng-bind="name"></p>
+    <div ng-view></div>
+    <script type="text/ng-template" id="question.html">
+      <p ng-bind="name"></p>
+    </script>
+    <script type="text/ng-template" id="result.html">
+      <p ng-bind="name"></p>
+    </script>
   </div>
-  <script src="js/lib/angular.min.js"></script>
+  <script src="js/vendor/angular.min.js"></script>
+  <script src="js/vendor/angular-route.min.js"></script>
   <script src="js/app.js"></script>
+    <script src="js/services/service.js"></script>
   <script src="js/controllers/appCtrl.js"></script>
+  <script src="js/controllers/quizCtrl.js"></script>
+  <script src="js/controllers/resultCtrl.js"></script>
 </body>
 </html>
