@@ -5,14 +5,17 @@
 ### Install
 
 1. Clone the repo
+ 
  ```bash
- git clone https://github.com/karthicksmart/angular-quiz/
+ git clone https://github.com/karthicksmart/angular-quiz
  ```
-2. cd into the project
+1. cd into the project
+
 ```bash
  cd angular-quiz
 ```
-3. Installation
+1. Installation
+
 ```bash
   npm install
 ```
