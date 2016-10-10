@@ -5,6 +5,6 @@ myApp.controller('appCtrl', function ($scope, userService, $location){
 
 	$scope.save = function() {
 		userService.saveUsername($scope.user.name);
-		$location.path("/quiz");
+		$location.path("/quiz/1");
 	}
 });

@@ -1,3 +1,13 @@
-<div><input type="text" ng-model="user.name"></div>
-<button><a ng-click="save()">Enter Quiz</a></button>
-<p>{{name}}</p>
+<div class="container" style="text-align:center;">
+<div class="row">
+	<h4>Quizzler Online</h4>
+	<div class="col-md-offset-4 col-md-4 userbg">
+		<form name="userForm" novalidate>
+		<input type="text" placeholder="Name. . ." ng-model="user.name" class="name" required/>
+		<div>
+		<button ng-disabled="userForm.$invalid" class="btn" ng-click="save()">Enter Quiz</button>
+		</div>
+		<form>
+	</div>
+</div>
+</div>

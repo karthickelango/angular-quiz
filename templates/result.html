@@ -1,1 +1,44 @@
-<div>Result</div>
+<div class="container" ng-controller="resultCtrl">
+<div class="row">
+	<h4 style="text-align:center;">Well Done: <strong><span style="color:#8bc34a">{{username}}</span></strong></h4>
+	<div class="col-md-6">
+		<h4 style="text-align:center;">Your score</h4>
+	<canvas id="doughnut" class="chart chart-doughnut" chart-data="data" chart-labels="labels">
+	</canvas> 
+	
+	</div>
+	<div class="col-md-6">
+		<h4 style="text-align:center;">Your Answers</h4>
+		<div class="resultbg">
+   <div class="col-md-12">
+      <span>1. Where is the correct place to insert a JavaScript?</span>
+      <p>Your Answer: <span class="ans1">{{userAns}}</span></p>
+      <p class="ansopcity answer1">Correct Answer: <span class="correctanswer">{{result.result1}}</span></p>
+   </div>
+   <div class="col-md-12">
+      <span>2. Inside which HTML element do we put the JavaScript?</span>
+      <p>Your Answer: <span class="ans2">{{userAns2}}</span></p>
+      <p class="ansopcity answer2">Correct Answer: <span class="correctanswer">{{result.result2}}</span></p>
+   </div>
+   <div class="col-md-12">
+      <span>3. How do you call a function named "myFunction"?</span>
+      <p>Your Answer: <span  class="ans3">{{userAns3}}</span></p>
+      <p class="ansopcity answer3">Correct Answer: <span class="correctanswer">{{result.result3}}</span></p>
+   </div>
+   <div class="col-md-12">
+      <span>4. How do you create a function in JavaScript?</span>
+      <p>Your Answer: <span class="ans4">{{userAns4}}</span></p>
+      <p class="ansopcity answer4">Correct Answer: <span class="correctanswer">{{result.result4}}</span></p>
+   </div>
+   <div class="col-md-12">
+      <span>5. How can you detect the client's browser name?</span>
+      <p>Your Answer: <span class="ans5">{{userAns5}}</span></p>
+      <p class="ansopcity answer5">Correct Answer: <span class="correctanswer">{{result.result5}}</span></p>
+   </div>
+   <div style="text-align:center;">
+   <button class="btn" ng-click="home()">Home</button>
+	</div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container" ng-controller="quizCtrl">
+   <div class="row">
+      <h4 style="text-align:center;">Quizzler Online: <span>Welcome, <strong><span style="color:#8bc34a">{{username}}</span></strong></span></h4>
+      <div class="col-md-offset-4 col-md-4 quizbg">
+         <p>3. How do you call a function named "myFunction"?</p>
+         <form name="answerForm" novalidate>
+         <ul>
+            <li ng-repeat="devices in answer3">
+               <p>
+                  <input class="with-gap" name="group1" type="radio"  ng-model="answer3.name" value="{{devices.name}}" required/>
+                  <label>{{devices.name}} </label>
+               </p>
+            </li>
+         </ul>
+         <button ng-disabled="answerForm.$invalid" class="btn" style="float: right;" ng-click="saveAns3()">continue</button>
+        </form>
+      </div>
+   </div>
+</div>
