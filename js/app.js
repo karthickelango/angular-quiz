@@ -3,7 +3,7 @@ var myApp = angular.module("myApp", ["ngRoute", "chart.js"]);
 myApp.config(["$routeProvider", function ($routeProvider) {
 	$routeProvider.
 	when("/login", {
-		templateUrl: "../templates/username.html",
+		templateUrl: "../../templates/username.html",
 		controller: "appCtrl"
 	}).
 
