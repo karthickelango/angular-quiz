@@ -42,23 +42,23 @@ $scope.result =
    $location.path("/login");
    }
 
-   var ctx = document.getElementById("doughnut");
-   var myChart = new Chart(ctx, {
-       type: 'doughnut',
-       data: {
-           labels: ["correctanswer", "wronganswer"],
-           datasets: [{
-               label: '# of Votes',
-               data: [4, 1],
-               backgroundColor: [
-                   'rgba(139, 195, 74, 0.7)',
-                   'rgba(255, 0, 0, 0.7)'
+   // var ctx = document.getElementById("doughnut");
+   // var myChart = new Chart(ctx, {
+   //     type: 'doughnut',
+   //     data: {
+   //         labels: ["correctanswer", "wronganswer"],
+   //         datasets: [{
+   //             label: '# of Votes',
+   //             data: [4, 1],
+   //             backgroundColor: [
+   //                 'rgba(139, 195, 74, 0.7)',
+   //                 'rgba(255, 0, 0, 0.7)'
                    
-               ],
-               borderWidth: 1
-           }]
-       },
-   });   
+   //             ],
+   //             borderWidth: 1
+   //         }]
+   //     },
+   // });   
 });
 
 
