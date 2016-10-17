@@ -1,38 +1,39 @@
 var myApp = angular.module("myApp", ["ngRoute", "chart.js"]);
 
 myApp.config(["$routeProvider, $locationProvider", function ($routeProvider, $locationProvider) {
+  var site_prefix = '/firefly';
 	$routeProvider.
-	when("/login", {
+	when(site_prefix + "/login", {
 		templateUrl: "./../templates/username.html",
 		controller: "appCtrl"
 	}).
 
-	when("/quiz/1", {
+	when(site_prefix + "/quiz/1", {
 		templateUrl: "./../templates/quiz1.html",
 		controller: "quizCtrl"
 	}).
 
-	when("/quiz/2", {
+	when(site_prefix + "/quiz/2", {
 		templateUrl: "./../templates/quiz2.html",
 		controller: "quizCtrl"
 	}).
 
-	when("/quiz/3", {
+	when(site_prefix + "/quiz/3", {
 		templateUrl: "././../templates/quiz3.html",
 		controller: "quizCtrl"
 	}).
 
-	when("/quiz/4", {
+	when(site_prefix + "/quiz/4", {
 		templateUrl: "./../templates/quiz4.html",
 		controller: "quizCtrl"
 	}).
 
-	when("/quiz/5", {
+	when(site_prefix + "/quiz/5", {
 		templateUrl: "./../templates/quiz5.html",
 		controller: "quizCtrl"
 	}).
 
-	when("/result", {
+	when(site_prefix + "/result", {
 		templateUrl: "./../templates/result.html",
 		controller: "resultCtrl"
 	}).
