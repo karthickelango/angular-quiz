@@ -1,6 +1,6 @@
 var myApp = angular.module("myApp", ["ngRoute", "chart.js"]);
 
-myApp.config(["$routeProvider", function ($routeProvider) {
+myApp.config(["$routeProvider, $locationProvider", function ($routeProvider, $locationProvider) {
 	$routeProvider.
 	when("/login", {
 		templateUrl: "./../templates/username.html",
@@ -38,4 +38,7 @@ myApp.config(["$routeProvider", function ($routeProvider) {
 	}).
 
 	otherwise({ redirectTo: "/login" });
+
+  	$locationProvider.html5Mode(true);
+
 }]);
