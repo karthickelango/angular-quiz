@@ -1,6 +1,6 @@
 var myApp = angular.module("myApp", ["ngRoute", "chart.js"]);
 
-myApp.config(["$routeProvider, $locationProvider", function ($routeProvider, $locationProvider) {
+myApp.config(["$routeProvider", function ($routeProvider) {
   var site_prefix = '/firefly';
 	$routeProvider.
 	when(site_prefix + "/login", {
@@ -39,7 +39,4 @@ myApp.config(["$routeProvider, $locationProvider", function ($routeProvider, $lo
 	}).
 
 	otherwise({ redirectTo: "/login" });
-
-  	$locationProvider.html5Mode(true);
-
 }]);
